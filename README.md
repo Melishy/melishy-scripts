@@ -1,3 +1,4 @@
-# ScriptsByMelishy
-My scripts by Melishy
-In this project, i will publish with my scripts.
+# melishy-scripts
+i make scripts for roblox (some scripts can be ran only executor, some is works both executor and roblox studio)
+
+- blueberry
