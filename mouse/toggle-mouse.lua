@@ -1,9 +1,3 @@
---[[ example global variables ]]
-
--- _G.keycode = 'C' --[[ change to any key you want ]]
--- _G.notifications = false --[[ set true to enable notifications ]]
-
---[[ script ]]
 local G2L = {};
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
