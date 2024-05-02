@@ -12,6 +12,7 @@ if your executor doesnt support ``HttpGet()`` then:
 - add the code to line 1:
 
 ``_G.keycode = 'C' --[[ change to any key you want ]]``
+
 ``_G.notifications = false --[[ set true to enable notifications ]]``
 
 - enjoy toggling your mouse!
