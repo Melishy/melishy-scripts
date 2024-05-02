@@ -1,5 +1,9 @@
+if game:GetService("CoreGui"):FindFirstChild("mouse") then
+    game:GetService("CoreGui"):FindFirstChild("mouse"):Destroy()
+end
+
 local G2L = {};
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["DisplayOrder"] = 100;
 G2L["1"]["AutoLocalize"] = false;
