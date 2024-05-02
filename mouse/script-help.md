@@ -17,5 +17,5 @@ if your executor doesnt support ``HttpGet()`` then:
 _G.keycode = 'C' --[[ change to any key you want ]]
 _G.notifications = false --[[ set true to enable notifications ]]
 ```
-
+**(also this works too on studio)**
 - enjoy toggling your mouse!
