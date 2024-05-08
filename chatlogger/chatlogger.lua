@@ -55,6 +55,4 @@ if not _G.isChatLogRunning then
 		warn("[WARN] chat logger is not working, because chat version is unsupported! stopping the chat logger.")
 		_G.OpenConsole = false
 	end
-else
-	warn("[WARN] the script is already running!")
 end
