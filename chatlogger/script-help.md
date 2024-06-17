@@ -2,14 +2,14 @@
 
 ### type: executor
 
-```
+```lua
 _G.OpenConsole = false -- automatically open console on execute
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Melishy/melishy-scripts/main/chatlogger/chatlogger.lua", true))("dsc.gg/melishy")
 ```
 
 ### type: studio/executor
 
-```
+```lua
 _G.OpenConsole = false -- automatically open console on execute
 
 if not _G.isChatLogRunning then
