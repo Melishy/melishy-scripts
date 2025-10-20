@@ -1,4 +1,4 @@
-	--open source ofc, because like it's easy to make your own one
+--open source ofc, because like it's easy to make your own one
 
 if not game.GameId == "126922689754590" then return end
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
@@ -42,7 +42,7 @@ Window:SetToggleKey(Enum.KeyCode.V)
 
 local Main = Window:Tab({
 	Title = "Main",
-	Icon = "infinity",
+	Icon = "book-dashed",
 })
 
 Main:Select()
