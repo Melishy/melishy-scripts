@@ -1,4 +1,4 @@
---open source ofc, because like it's easy to make your own one
+	--open source ofc, because like it's easy to make your own one
 
 if not game.GameId == "126922689754590" then return end
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
@@ -47,31 +47,7 @@ local Main = Window:Tab({
 
 Main:Select()
 
-Main:Paragraph({
-    Title = "INFO",
-    Desc = "You can toggle this GUI by pressing V",
-})
-
-Main:Keybind({
-    Title = "Change?",
-    Desc = "You can change the toggle GUI keybind at anytime",
-    Value = "V",
-    Callback = function(v)
-        Window:SetToggleKey(Enum.KeyCode[v])
-    end
-})
-
-local Survivor = Window:Tab({
-	Title = "Survivor",
-	Icon = "infinity",
-})
-
-local Killer = Window:Tab({
-	Title = "Killer",
-	Icon = "slice",
-})
-
-Survivor:Toggle({
+Main:Toggle({
 	Title = "Toggle Teleport Tool",
 	Desc = "Gives you Teleport Tool, even if you respawned",
 	Type = "Toggle",
@@ -116,7 +92,31 @@ Survivor:Toggle({
 	end
 })
 
-Survivor:Divider()
+Main:Divider()
+
+Main:Paragraph({
+    Title = "INFO",
+    Desc = "You can toggle this GUI by pressing V",
+})
+
+Main:Keybind({
+    Title = "Change?",
+    Desc = "You can change the toggle GUI keybind at anytime",
+    Value = "V",
+    Callback = function(v)
+        Window:SetToggleKey(Enum.KeyCode[v])
+    end
+})
+
+local Survivor = Window:Tab({
+	Title = "Survivor",
+	Icon = "infinity",
+})
+
+local Killer = Window:Tab({
+	Title = "Killer",
+	Icon = "slice",
+})
 
 Survivor:Toggle({
 	Title = "Yell Repeatedly",
