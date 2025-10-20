@@ -221,6 +221,8 @@ Killer:Paragraph({
     Desc = "It works even if you're not a Killer. That makes so OP",
 })
 
+Killer:Divider()
+
 Killer:Toggle({
 	Title = "Toggle Scan",
 	Desc = "Just like a Killer that can scan everyone's locations",
@@ -258,7 +260,6 @@ Killer:Keybind({
 Killer:Button({
     Title = "One-time scan",
     Desc = "for mobile for mobile for mobile for mobile case, got it?",
-    Locked = isVoicePlace(),
     Callback = function()
         game:GetService("ReplicatedStorage"):WaitForChild("VCactivated"):FireServer()
     end
