@@ -108,12 +108,6 @@ Main:Keybind({
     end
 })
 
-Main:Section({
-    Title = "i plan on adding reviving yourself feature if that's possible btw",
-    TextSize = 11,
-    Opened = true
-})
-
 local Survivor = Window:Tab({
 	Title = "Survivor",
 	Icon = "infinity",
@@ -141,7 +135,7 @@ Survivor:Toggle({
 			task.spawn(function()
 				repeat
 					yell()
-					task.wait()
+					task.wait(.1)
 				until not yello
 			end)
 		end
@@ -165,7 +159,7 @@ Survivor:Toggle({
     		task.spawn(function()
     			repeat
     				vcify()
-    				task.wait()
+    				task.wait(.1)
     			until not vcing
     		end)
     	end
@@ -246,7 +240,7 @@ Killer:Toggle({
 			task.spawn(function()
 				repeat
 					scanify()
-					task.wait()
+					task.wait(.1)
 				until not scanno
 			end)
 		end
