@@ -108,6 +108,12 @@ Main:Keybind({
     end
 })
 
+Main:Section({
+    Title = "i plan on adding reviving yourself feature if that's possible btw",
+    TextSize = 11,
+    Opened = true
+})
+
 local Survivor = Window:Tab({
 	Title = "Survivor",
 	Icon = "infinity",
